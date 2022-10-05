@@ -1,1 +1,6 @@
-console.log('Bemvindo')
+console.log(`
+Bemvindo
+${
+    1+1
+}
+    `)

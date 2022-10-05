@@ -11,10 +11,13 @@ a{
 a:hover{
     color: blue;
 }
-a.e2bc::after {
-    content: "attachment";
+a.e2bc::before {
+    content: " attachment";
     font-family: 'Material Icons';    
-    font: smaller;
+}
+a.f1cd::before {
+    content: " anchor";
+    font-family: 'Material Icons';
 }
 .title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

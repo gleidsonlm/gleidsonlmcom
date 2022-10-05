@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="GleidsonLM" />
+    <meta name="description" content="Gleidson Medeiros personal page for resume, connect and contact" />
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Gleidson Medeiros - Welcome</title>
+</head>
+<body>
+    <script src="/scripts.js"></script>
+    <div id="page">
+        <!--header-->
+        <div id="header">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a class="e2bc" href="#resume">Resume</a></li>
+                        <li><a href="#links">Links</a>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!--about-->
+        <div id="about">
+            <h1 class="title">Greetings!</h1>
+            <p>
+                <figure>
+                    <img src="https://www.gravatar.com/avatar/023ed5a74824b2d7e5c6540ad467243b" alt="Gleidson avatar picture" id="avatar"/>
+                </figure>
+                <span>Hi, <a href="#meetandgreet">nice to meet you</a>!
+                <span><br />I'm Gleidson, husband to Juliane and father to Beatriz and Bernardo.</span>
+                <span><br />My best guess is that you are here to check my <a class="e2bc" href="#resume">resume</a>, connect on <a href="#links">social media</a> or to <a href="#contact">contact me</a>.</span>
+            </p>
+        </div>
+        <!--contact-->
+        <div id="contact">
+            <h2>Get in touch</h2>
+            <ul>
+                <li class="mail"><a href="#contactform">Send me a message.</a></li>
+                <li class="call"><a href="#phonenumber">Call or send me a text.</a></li>
+            </ul>
+        </div>        
+        <!--links-->
+        <div id="links">
+            <h2 class="title">Let's Connect</h2>        
+                <ul class="list-link">
+                    <li><a href="https://www.linkedin.com/in/gleidsonlm" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                    <li><a href="https://github.com/gleidsonlm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://twitter.com/gleidsonlm" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="http://youtube.com/gleidsonlm" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+            </nav>
+        </div>
+
+        <!--meetandgreet-->
+        <div id="meetandgreet">
+            <h2>Greetings</h2>
+            <!--YouTube embed-->
+        </div>
+        <!--contactform-->
+        <div id="contactform">
+            <form action="#" method="post" id="form-email">
+                <fieldset form="form-email">
+                    <legend>Contact Form, send an email</legend>
+                    <label for="fullname">Your Name:</label>
+                    <br />
+                    <input id="fullname" type="text" autocomplete="name" placeholder="What's your full name?" maxlength="50" required>
+                    <br />
+                    <label for="reply-address">Your Email:</label>
+                    <br />
+                    <input id="reply-address" type="email" autocomplete="email" placeholder="What email can I reply to you?" maxlength="255" required>
+                    <br />
+                    <label for="message">Your Message:</label>    
+                    <br />
+                    <textarea id="message" placeholder="How may I help you?" required maxlength="3125"></textarea>
+                    <br />
+                    <input type="submit" form="form-email" id="submit" value="Send"></button>                
+                </fieldset>
+            </form>
+        </div>
+        <!--footer-->
+        <footer>
+            <hr />
+            <span>gleidsonlm 2022</span>
+        </footer>
+    </div>
+</body>
+</html>

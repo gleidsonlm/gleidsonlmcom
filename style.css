@@ -11,31 +11,35 @@ a{
 a:hover{
     color: blue;
 }
-a.e2bc::before {
+header nav {
+    display: none;
+}
+/* header nav ul li{
+    list-style-type: none;
+    display: inline-flex;
+} */
+section#about a.e2bc::before {
     content: " attachment";
     font-family: 'Material Icons';    
 }
-a.f1cd::before {
+section#about a.f1cd::before {
     content: " anchor";
     font-family: 'Material Icons';
 }
 .title {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-div#page{
+main#page,footer{
     margin: auto;
     min-width: 400px;
     max-width: 800px;
-    display: grid;
     grid-template-columns: 2fr;
+    display: grid;
 }
-div#header{
-    display: none;
-}
-div#about,div#meetandgreet,footer {
+section#about,section#meetandgreet,footer {
     grid-column: 1/3;
 }
-div#about h1.title{
+section#about h1.title{
     display: flex;
     align-items: flex-end;
     background: url(/img/banner.jpg) no-repeat gray center;
@@ -46,41 +50,41 @@ img#avatar {
     float: left;
     padding-right: 25px;
 }
-div#contact{
+section#contact{
     grid-column: 1/2;
 }
-div#contact li{
+section#contact li{
     list-style:none;
 }
-div#contact li.mail::before{
+section#contact li.mail::before{
     content: "mail";
     font-family: 'Material Icons';
     padding: 10px;
     font: smaller;
 }
-div#contact li.call::before{
+section#contact li.call::before{
     content: "call";
     font-family: 'Material Icons';
     padding: 10px;
     font: smaller;
 }
-div#links{
+section#links{
     grid-column: 2/3;
 }
-div#links li{
+section#links li{
     list-style: none;
 }
-div#links li::before{
+section#links li::before{
     content: 'link';
     font-family: 'Material Icons';
     padding: 10px;
     font: smaller;
 }
-div#contactform{
+section#contactform{
     grid-column: 1/3;
     visibility: visible;
 }
-div#contactform {
+section#contactform {
     font-size: medium;
 }
 footer{

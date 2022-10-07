@@ -9,27 +9,24 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Gleidson Medeiros - Welcome</title>
 </head>
 <body>
     <script src="/scripts.js"></script>
-    <div id="page">
-        <!--header-->
-        <div id="header">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a class="e2bc" href="#resume">Resume</a></li>
-                        <li><a href="#links">Links</a>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+    <!--header-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a class="e2bc" href="#resume">Resume</a></li>
+                <li><a href="#links">Links</a>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="page">
         <!--about-->
-        <div id="about">
+        <section id="about">
             <h1 class="title">Greetings!</h1>
             <p>
                 <figure>
@@ -39,57 +36,59 @@
                 <span><br />I'm Gleidson, husband to Juliane and father to Beatriz and Bernardo.</span>
                 <span><br />My best guess is that you are here to check my <a class="e2bc" href="#resume">resume</a>, connect on <a href="#links" class="f1cd">social media</a> or to <a href="#contact" class="f1cd">contact me</a>.</span>
             </p>
-        </div>
-        <!--contact-->
-        <div id="contact">
-            <h2>Get in touch</h2>
-            <ul>
-                <li class="mail"><a href="#contactform">Send me a message.</a></li>
-                <li class="call"><a href="#phonenumber">Call or send me a text.</a></li>
-            </ul>
-        </div>        
-        <!--links-->
-        <div id="links">
-            <h2 class="title">Let's Connect</h2>        
-                <ul class="list-link">
-                    <li><a href="https://www.linkedin.com/in/gleidsonlm" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-                    <li><a href="https://github.com/gleidsonlm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    <li><a href="http://youtube.com/gleidsonlm" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-            </ul>
-            </nav>
-        </div>
+        </section>
 
-        <!--meetandgreet-->
-        <div id="meetandgreet">
-            <h2>Greetings</h2>
-            <!--YouTube embed-->
-        </div>
-        <!--contactform-->
-        <div id="contactform">
-            <form action="#" method="post" id="form-email">
-                <fieldset form="form-email">
-                    <legend>Contact Form, send an email</legend>
-                    <label for="fullname">Your Name:</label>
-                    <br />
-                    <input id="fullname" type="text" autocomplete="name" placeholder="What's your full name?" maxlength="50" required>
-                    <br />
-                    <label for="reply-address">Your Email:</label>
-                    <br />
-                    <input id="reply-address" type="email" autocomplete="email" placeholder="What email can I reply to you?" maxlength="255" required>
-                    <br />
-                    <label for="message">Your Message:</label>    
-                    <br />
-                    <textarea id="message" placeholder="How may I help you?" required maxlength="3125"></textarea>
-                    <br />
-                    <input type="submit" form="form-email" id="submit" value="Send"></button>                
-                </fieldset>
-            </form>
-        </div>
-        <!--footer-->
-        <footer>
-            <hr />
-            <span>gleidsonlm 2022</span>
-        </footer>
-    </div>
+    <!--contact-->
+    <section id="contact">
+        <h2>Get in touch</h2>
+        <ul>
+            <li class="mail"><a href="#contactform">Send me a message.</a></li>
+            <li class="call"><a href="#phonenumber">Call or send me a text.</a></li>
+        </ul>
+    </section>        
+    <!--links-->
+    <section id="links">
+        <h2 class="title">Let's Connect</h2>        
+            <ul class="list-link">
+                <li><a href="https://www.linkedin.com/in/gleidsonlm" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+                <li><a href="https://github.com/gleidsonlm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="http://youtube.com/gleidsonlm" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        </ul>
+        </nav>
+    </section>
+
+    <!--meetandgreet-->
+    <section id="meetandgreet">
+        <h2>Greetings</h2>
+        <!--YouTube embed-->
+    </section>
+    <!--contactform-->
+    <section id="contactform">
+        <form action="#" method="post" id="form-email">
+            <fieldset form="form-email">
+                <legend>Contact Form, send an email</legend>
+                <label for="fullname">Your Name:</label>
+                <br />
+                <input id="fullname" type="text" autocomplete="name" placeholder="What's your full name?" maxlength="50" required>
+                <br />
+                <label for="reply-address">Your Email:</label>
+                <br />
+                <input id="reply-address" type="email" autocomplete="email" placeholder="What email can I reply to you?" maxlength="255" required>
+                <br />
+                <label for="message">Your Message:</label>    
+                <br />
+                <textarea id="message" placeholder="How may I help you?" required maxlength="3125"></textarea>
+                <br />
+                <input type="submit" form="form-email" id="submit" value="Send"></button>                
+            </fieldset>
+        </form>
+    </section>
+    <!--footer-->
+    </main>
+    <footer>
+        <hr />
+        <span>gleidsonlm 2022</span>
+    </footer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </body>
 </html>

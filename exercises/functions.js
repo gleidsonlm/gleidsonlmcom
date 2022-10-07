@@ -1,5 +1,120 @@
 // https://app.rocketseat.com.br/discover/course/o-guia-estelar-de-java-script/funcoes/functions
 
+
+
+/* 4. Seeking and Counting of Arrays
+    Based on the Books by Category Array bellow:
+        - Count the number of categories and number of books in each category;
+        - Count the number of authors;
+        - Return books from "Augusto Cury";
+        - Make a function receiveing the author name and returning books from this author.
+*/
+/* const booksByCategory = [
+    {
+        category: "Riqueza",
+        books: [
+            {
+                title: "Os segredos da mente milionária",
+                author: "T. Harv Eker",
+            },
+            {
+                title: "O homem mais rico da Babilônia",
+                author: "George S. Clason",
+            },
+            {
+                title: "Pai rico, pai pobre",
+                author: "Robert T. Kiyosaki e Sharon L. Lechter",
+            },
+        ],
+    },
+    {
+        category: "Inteligência Emocional",
+        books: [
+            {
+                title: "Você é Insubstituível",
+                author: "Augusto Cury",
+            },
+            {
+                title: "Ansiedade – Como enfrentar o mal do século",
+                author: "Augusto Cury",
+            },
+            {
+                title: "Os 7 hábitos das pessoas altamente eficazes",
+                author: "Stephen R. Covey",
+            },
+        ],
+    },
+];
+
+// Array with non repeated 'author' propriety value within booksByCategory/books array
+function authorCount(){
+    let authors = [];
+    for(let category of booksByCategory)
+        for(let book of category.books) {
+            if (authors.indexOf(book.author) === -1) {
+                authors.push(book.author)
+            }
+        }
+    console.log(`Total of authors: ${authors.length}`)
+}
+
+// Array with property "title" where "author" matchs parameter
+function booksByAuthor(author) {
+    let books = [];
+    for(let category of booksByCategory) {
+        for(let book of category.books) {
+            (book.author === author) ? books.push(book.title) : ''
+        }
+    }
+    console.log(`${books.length} books by "${author}": ${books.join(", ")}`);
+}
+
+//How many categories in the array
+console.log("Total of books categories: "+ booksByCategory.length);
+
+//How many books by category loop
+for(let category of booksByCategory){
+    console.log(`Total of books in "${category.category}": ${category.books.length}`)
+};
+
+//Function for how many authors
+authorCount();
+
+//Return book items with the give property "author", must match completely
+booksByAuthor("Augusto Cury"); */
+
+/* 3. Convert Celsius to Fahrenheit
+    Create a function to receive a string in Celsius or Fahrenheit, and convert it from one measure unit to another.
+    C = (F - 32)* 5/9
+    F = C * 9/5 + 32
+*/
+/*// Call function to identify if C or F
+let convertTemperatureUnit = function(value){
+    let valueFixed = value.replace(/\s+/gm,'').toUpperCase();
+    let valueArray = Array.from(valueFixed);
+    let valueUnit = valueArray.pop();
+    let valueNumber = valueFixed.match(/^[\d,]+\.\d+/);
+    // From F to C
+    if(valueUnit=='F') {
+        let isCelcius = true;
+        let C = 0;
+        C = ((valueNumber - 32)* 5/9).toFixed(2) + "C"
+        return C;
+    // From C to F
+    } else if(valueUnit=='C') {
+        let isCelcius = false;
+        let F = 0;
+        F = (valueNumber * 9/5 + 32).toFixed(2) + "F"
+        return F;
+    }
+    // Neither C or F
+    else {
+        console.log('Please, insert the temperature unit mesure using either "C" (Celsius) or "F" (Fahrenheit)');
+    }
+}
+// Call function with given string
+console.log(convertTemperatureUnit("100 C")); */
+
 /* 2. Check the Balance
     2a) Create one object with two proprieties, both Array type:
     - Income;
@@ -9,8 +124,7 @@
     - Show the balance total;
     - Output a message if it's positive or negative.
 */
-
-let balance = {
+/* let balance = {
     income: [1200, 120.19, 200.00, 427.93],
     expense: [499.99,257.13,171.00,120.00,900],
 }
@@ -34,17 +148,7 @@ const balanceText = (balanceTotal < 0) ? "negative" : "positive"
 console.log(`Your balance is "${balanceText}" $ ${balanceTotal.toFixed(2)}
 Incomes = $ ${incomeTotal.toFixed(2)}
 Expenses = $ ${expenseTotal.toFixed(2)}
-`)
-
-
-// for (let credit in income) {
-//     // console.log(income[credit]);
-//     creditSum += income[credit]
-//     console.log(creditSum.length())
-// }
-
-// console.log(income)
-
+`) */
 
 /* 1. Convert Grades to Scales
     Change grades set in number for a scale set in characters:
@@ -96,6 +200,12 @@ for(let piNumbers of piArray){
     console.log(piNumbers)
 }
 
+let i = 70
+while(i>10) {
+    console.log(i)
+    i /= 2
+} 
+
 for (let i = 70; i < 1000; i+=7) {
     if (i > 700) {
         break;
@@ -103,12 +213,6 @@ for (let i = 70; i < 1000; i+=7) {
         continue;
     }
     console.log(i)
-}
-
-let i = 70
-while(i>10) {
-    console.log(i)
-    i /= 2
 } */
 
 /* // Using Throw, Try, Catch
